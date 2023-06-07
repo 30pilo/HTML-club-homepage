@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- #BeginTemplate "master.dwt" -->
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<link href="master.css" rel="stylesheet" type="text/css" />
+<link href="ddcolortabs.css" rel="stylesheet" type="text/css" />
+<script src="dropdowntabs.js" type="text/javascript"></script>
+<!-- #BeginEditable "doctitle" -->
+<title>Registration Form</title>
+<script type="text/javascript">
+	function Greeting()
+	{
+		window.alert("Welcome to Registration Form!");
+	}
+	function Message()
+	{
+		window.alert("Please fill up the form!");
+	}
+	function Bye()
+	{
+		window.alert("Thank You!");
+	}	
+</script>
+<!-- #EndEditable -->
+</head>
+
+<body>
+<div class="page-container">
+	<div class="header">
+		<table cellpadding="0" cellspacing="0" style="width: 100%">
+			<tr>
+				<td class="header-logo">
+					<a href="https://www.apu.edu.my/">
+						<img alt="" src="APU_logo_removebg2.png" class="header-logo" />
+					</a>
+				</td>
+				<td style="padding-left: 25px;">
+					<a href="homepage.html">
+						<img alt="" src="CLCS_logo_removebg.png" class="header-logo" />
+					</a>
+				</td>
+				<td style="vertical-align: bottom; text-align: right; padding-right: 20px">
+					<a href="login.html" style="color:#3B3A3F; text-decoration: none">&#128100; Login</a>
+				</td>
+			</tr>
+		</table>
+	</div>
+	
+	<div id="colortab" class="ddcolortabs">
+		<ul>
+		<li><a href="homepage.html"><span>Home</span></a></li>
+		<li><a href="programlist.html"><span>Events/Activities</span></a></li>
+		<li><a href="articles.html"><span>Articles</span></a></li>
+		<li><a href="photo.html"><span>Photo Gallery</span></a></li>	
+		<li><a href="joinus.html"><span>Join Us</span></a></li>
+		<li><a href="aboutus.html" rel="dropmenu1_a"><span>About Us</span></a></li>	
+		</ul>
+	</div>
+	
+	<div class="ddcolortabsline">&nbsp;</div>
+	
+	<!-- drop down menu -->                                                   
+	<div id="dropmenu1_a" class="dropmenudiv_a">
+		<a href="committee.html">Committee</a>
+		<a href="followus.html">Follow Us</a>
+	</div>
+	
+	<script type="text/javascript">
+		//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+		tabdropdown.init("colortab", 5)
+	</script>
+
+	<div class="content-area">
+		<div class="page-title">
+			
+		<!-- #BeginEditable "pagetitle" -->
+			<div style="color:aqua; text-align: center; background-color:black; border: solid 4px red">
+				<font size="7">2022 APU’S CHINESE SOCIETY’S REGISTRATION FORM</font>
+			</div>
+		<!-- #EndEditable -->
+			
+		</div>
+		<div class="page-content">
+		
+		<!-- #BeginEditable "pagecontent" -->
+			<div style="padding: 24px; font-size:x-large">
+<b>
+<u>
+EVEN DETAILS
+</u>
+</b>
+</div>
+
+<div style="padding: 24px; font-size: large">
+&nbsp; <b>Date:</b>  03/09/2022 - 04/09/2022 ( Saturday - Sunday )<br/>
+&nbsp; <b>Event Form:</b> 8 hours Online activity in zoom, 12 hours Self-Fasting & 10 hours Physical activity <br/>
+&nbsp; <b>Time:</b> 1000 - 1800 (03/09/2022, Zoom Online Activity)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0900 - 1900 (04/09/2022, Physical Activity)<br/>
+&nbsp; <b>Participant's Age Group:</b> Age 17 or above<br/>
+&nbsp; <b>Registration Fee:</b> RM35/person<br/>
+&nbsp; <b>Venue:</b> Zoom, APU Campus <br/>
+&nbsp; <b>Address:</b> Jalan Teknologi 5, Taman Teknologi Malaysia, 57000 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur<br/>
+<br/><br/>
+<li>Lite Package (member fee): RM8</li>
+<li>Value Package (member fee + club shirt): RM35</li>
+<li>The member fee is a one-time fee. Club shirts can be collected during registration at our physical recruitment booth or you may also opt for collection after returning to campus.</li>
+<li>For any enquiries, do feel free to contact:</li>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(+60)11-6567 2872 (Shermaine)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(+60)19-885 6628 (Qian Ying)<br/><br/>
+<li>Facebook Page: https://www.facebook.com/apuclcs/?ref=page_internal</li>
+<li>Instagram Account:</li>
+</div>
+
+<div style="padding: 24px; font-size:x-large">
+<b>
+<u>
+Kindly read and fill up the form
+</u>
+</b>
+</div>
+
+<form name="form2" method="get" action="submit.html">
+	Name: 
+	<input type="text" name="name2" size="60" maxlength="60" />
+	<br/>
+	TP. Number:
+	<input type="text" name="tp. number2" size="20" maxlength="8" />
+	<br/>
+	E-mail: 
+	<input type="text" name="e-mail2" size="60" maxlength="60" />
+	<br/>
+	Phone Number: 
+	<input type="text" name="phone number2" size="60" maxlength="60" />
+	<br>
+	Address:
+	<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<textarea name="address2" rows="5" cols="40" onfocus="this.value=''" >Address here...
+	</textarea>
+	<br/>
+	Birth Date:
+	<input type="date" id="birthday" name="birthday" />
+	<br/>
+	<tr>
+			<td>Where did you</td>
+			<td>:</td>
+			<td><input type="checkbox" name="choice1" value="FC" checked="checked" />A friend or colleague
+				<input type="checkbox" name="choice2" value="GG" />Google
+				<input type="checkbox" name="choice3" value="SC" />Social
+				<input type="checkbox" name="choice4" value="LC" />Lecturer
+				<input type="checkbox" name="choice5" value="OT" />Others
+
+			</td>
+		</tr>
+		<br/>
+		hear about us
+		<br/><br/><br/>
+		
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;________________________________________________________________________________________________________________________________________
+<br/><br/>
+<div align="center"> 
+<font size="7">MEMBERSHIP RULES</font><br/>
+</div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;________________________________________________________________________________________________________________________________________
+<br/><br/>
+
+<div style="padding: 10px; font-size:large">
+<b>
+<u>
+MEMBERSHIP RULES
+</u>
+</b>
+</div>
+<br/>
+
+<div style="padding: 10px; font-size:large">
+1. Membership is available to anyone 18 years of age or older.<br/>
+2. You promise <b>NOT</b> to use to conduct any fraudulent or business activity or have more than one <b>Member Account</b> at any time.
+</div>
+<br/>
+
+<div style="font-size:x-large">
+&nbsp;&nbsp;&nbsp;
+<tr>
+			<td><input type="checkbox" name="choice1" value="FC" />I have read, understood, and accepted the rules for membership.<br><br>
+			</td>
+		</tr>
+</div>
+<br/>
+
+<div style="background-color:white; border: solid 4px black">
+<br/>
+	<span style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size:x-large; color:red;">&nbsp;
+		<u>NOTE</u>
+</span>
+<br/><br/>
+&nbsp;&nbsp;&nbsp;
+
+	<span style="font-family:sans-serif; font-size:large;">
+		You will receive an email regarding membership fees and packages within 24 hours in working days after submit your 
+		form.  
+</span>
+
+		
+<br/><br/>
+	
+	
+		
+
+</div>
+<br/><br/>
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<td><input type="submit" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="reset" /></td>
+		
+
+</form>		
+		<!-- #EndEditable -->
+		
+		</div>
+	</div>
+	<div class="footer">
+		Created by FDD-052022<br/>
+		Group 4
+	</div>
+</div>
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>
