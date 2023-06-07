@@ -1,0 +1,13 @@
+/* Filename: committee.css */
+
+#con{
+	text-align: center;
+	border-bottom: 1px dashed #3B3A3F;
+}
+
+#con > div {
+	display: inline-block;
+	padding: 20px;
+	height: 250px;
+	width: 300px;
+}
