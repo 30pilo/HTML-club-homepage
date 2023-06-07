@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<link href="master.css" rel="stylesheet" type="text/css" />
+<link href="ddcolortabs.css" rel="stylesheet" type="text/css" />
+<script src="dropdowntabs.js" type="text/javascript"></script>
+<title>Dragon Boat Festival</title>
+<link rel="stylesheet" href="main.css" type="text/css"/>
+<style type="text/css">
+.auto-style1 {
+	margin-left: 141px;
+}
+</style>
+</head>
+
+<body>
+<div class="page-container">
+	<div class="header">
+		<table cellpadding="0" cellspacing="0" style="width: 100%">
+			<tr>
+				<td class="header-logo">
+					<a href="https://www.apu.edu.my/">
+						<img alt="" src="APU_logo_removebg2.png" class="header-logo" />
+					</a>
+				</td>
+				<td style="padding-left: 25px;">
+					<a href="homepage.html">
+						<img alt="" src="CLCS_logo_removebg.png" class="header-logo" />
+					</a>
+				</td>
+				<td style="vertical-align: bottom; text-align: right; padding-right: 20px">
+					<a href="login.html" style="color:#3B3A3F; text-decoration: none">&#128100; Login</a>
+				</td>
+			</tr>
+		</table>
+	</div>
+	
+	<div id="colortab" class="ddcolortabs">
+		<ul>
+		<li><a href="homepage.html"><span>Home</span></a></li>
+		<li><a href="programlist.html"><span>Events/Activities</span></a></li>
+		<li><a href="articles.html"><span>Articles</span></a></li>
+		<li><a href="photo.html"><span>Photo Gallery</span></a></li>	
+		<li><a href="joinus.html"><span>Join Us</span></a></li>
+		<li><a href="aboutus.html" rel="dropmenu1_a"><span>About Us</span></a></li>	
+		</ul>
+	</div>
+	
+	<div class="ddcolortabsline">&nbsp;</div>
+	
+	<!-- drop down menu -->                                                   
+	<div id="dropmenu1_a" class="dropmenudiv_a">
+		<a href="committee.html">Committee</a>
+		<a href="followus.html">Follow Us</a>
+	</div>
+	
+	<script type="text/javascript">
+		//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+		tabdropdown.init("colortab", 5)
+	</script>
+
+	<div class="content-area">
+		<div class="container" style="left: 1px; top: -34px">
+		<div class="langWrap" style="width: 928px">
+			<a href="#" language='english' class="active">EN</a>
+			<a href="#" language='chinese'>chinese</a>
+			
+		</div>
+		<div class="content" style="width: 933px">
+			<h2 class="title">Dragon Boat Festival</h2>
+			<p class="description">Origin Another explanation to the origin of the Dragon Boat Festival comes from before the Qin Dynasty (221–206 BC). The fifth month of the lunar calendar was regarded as a bad month and the fifth day of the month a bad day. Venomous animals were said to appear starting from the fifth day of the fifth month, such as snakes, centipedes, and scorpions; people also supposedly get sick easily after this day. Therefore, during the Dragon Boat Festival, people try to avoid this bad luck. For example, people may paste pictures of the five poisonous creatures on the wall and stick needles in them. People may also make paper cutouts of the five creatures and wrap them around the wrists of their children. Big ceremonies and performances developed from these practices in many areas, making the Dragon Boat Festival a day for getting rid of disease and bad luck.Zongzi A notable part of celebrating Dragon Boat Festival is making and eating zongzi with family members and friends. People traditionally wrap zongzi in leaves of reed, bamboo, forming a pyramid shape. The leaves also give a special aroma and flavor to the sticky rice and fillings. Choices of fillings vary depending on regions. Northern regions in China prefer sweet or dessert-styled zongzi, with bean paste, jujube, and nuts as fillings. Southern regions in China prefer savory zongzi, with a variety of fillings including marinated pork belly, sausage, and salted duck eggs. Zongzi appeared before the Spring and Autumn Period and was originally used to worship ancestors and gods; in the Jin Dynasty, Zongzi became a festive food for the Dragon Boat Festival. Jin Dynasty, dumplings were officially designated as the Dragon Boat Festival food. At this time, in addition to glutinous rice, the raw materials for making zongzi are also added with Chinese medicine Yizhiren. The cooked zongzi is called yizhi zong . The reason why the Chinese eat zongzi on this special day has many statements. The folk version is to hold a memorial ceremony for Quyuan. While in fact, Zongzi has been regarded as an oblation for the ancestor even before the Chunqiu period. From the Jin dynasty, Zongzi officially became the festival food and long last until now.In the early 20th Century the Dragon Boat Festival was observed from the first to the fifth days of the fifth month, and also known as the Festival of Five Poisonous Insects . Yu Der Ling writes in chapter 11 of her 1911 memoir Two Years in the Forbidden City:he first day of the fifth moon was a busy day for us all, as from the first to the fifth of the fifth moon was the festival of five poisonous insects, which I will explain later—also called the Dragon Boat Festival. Now about this Feast. It is also called the Dragon Boat Feast. The fifth of the fifth moon at noon was the most poisonous hour for the poisonous insects, and reptiles such as frogs, lizards, snakes, hide in the mud, for that hour they are paralyzed. Some medical men search for them at that hour and place them in jars, and when they are dried, sometimes use them as medicine. Her Majesty told me this, so that day I went all over everywhere and dug into the ground, but found nothing.</p>
+		</div>
+			</div>
+	<script>
+		const langEl = document.querySelector('.langWrap');
+		const link = document.querySelectorAll('a');
+		const titleEl = document.querySelector('.title');
+		const descrEl = document.querySelector('.description');
+
+		link.forEach(el => {
+			el.addEventListener('click', () => {
+				langEl.querySelector('.active').classList.remove('active');
+				el.classList.add('active');
+
+				const attr = el.getAttribute('language');
+
+				titleEl.textContent = data[attr].title;
+				descrEl.textContent = data[attr].description;
+			});
+		});
+		
+		var data = {
+			  "english": 
+			  {
+			    "title": "Dragon Boat Festival",
+			    "description": 
+				    "Origin Another explanation to the origin of the Dragon Boat Festival comes from before the Qin Dynasty (221–206 BC). The fifth month of the lunar calendar was regarded as a bad month and the fifth day of the month a bad day. Venomous animals were said to appear starting from the fifth day of the fifth month, such as snakes, centipedes, and scorpions; people also supposedly get sick easily after this day. Therefore, during the Dragon Boat Festival, people try to avoid this bad luck. For example, people may paste pictures of the five poisonous creatures on the wall and stick needles in them. People may also make paper cutouts of the five creatures and wrap them around the wrists of their children. Big ceremonies and performances developed from these practices in many areas, making the Dragon Boat Festival a day for getting rid of disease and bad luck.Zongzi A notable part of celebrating Dragon Boat Festival is making and eating zongzi with family members and friends. People traditionally wrap zongzi in leaves of reed, bamboo, forming a pyramid shape. The leaves also give a special aroma and flavor to the sticky rice and fillings. Choices of fillings vary depending on regions. Northern regions in China prefer sweet or dessert-styled zongzi, with bean paste, jujube, and nuts as fillings. Southern regions in China prefer savory zongzi, with a variety of fillings including marinated pork belly, sausage, and salted duck eggs. Zongzi appeared before the Spring and Autumn Period and was originally used to worship ancestors and gods; in the Jin Dynasty, Zongzi became a festive food for the Dragon Boat Festival. Jin Dynasty, dumplings were officially designated as the Dragon Boat Festival food. At this time, in addition to glutinous rice, the raw materials for making zongzi are also added with Chinese medicine Yizhiren. The cooked zongzi is called yizhi zong. The reason why the Chinese eat zongzi on this special day has many statements. The folk version is to hold a memorial ceremony for Quyuan. While in fact, Zongzi has been regarded as an oblation for the ancestor even before the Chunqiu period. From the Jin dynasty, Zongzi officially became the festival food and long last until now.In the early 20th Century the Dragon Boat Festival was observed from the first to the fifth days of the fifth month, and also known as the Festival of Five Poisonous Insects . Yu Der Ling writes in chapter 11 of her 1911 memoir Two Years in the Forbidden City:he first day of the fifth moon was a busy day for us all, as from the first to the fifth of the fifth moon was the festival of five poisonous insects, which I will explain later—also called the Dragon Boat Festival. Now about this Feast. It is also called the Dragon Boat Feast. The fifth of the fifth moon at noon was the most poisonous hour for the poisonous insects, and reptiles such as frogs, lizards, snakes, hide in the mud, for that hour they are paralyzed. Some medical men search for them at that hour and place them in jars, and when they are dried, sometimes use them as medicine. Her Majesty told me this, so that day I went all over everywhere and dug into the ground, but found nothing."
+			  },
+			  "chinese": 
+			  {
+			    "title": "端午节",
+			    "description": 
+				    "对端午节起源的另一种解释来自于秦朝（公元前221-206年）之前。农历的第五个月被认为是不好的月份，而每月的第五天则是不好的日子。据说从五月初五开始会出现有毒的动物，如蛇、蜈蚣和蝎子；据说这一天之后人们也容易生病。因此，在端午节期间，人们试图避免这种厄运。例如，人们可能会在墙上贴上五毒生物的图片，并在上面扎针。人们还可以制作五毒生物的剪纸，并将其缠绕在孩子的手腕上。在许多地区，这些做法形成了大型仪式和表演，使端午节成为摆脱疾病和厄运的日子。粽子。庆祝端午节的一个值得注意的部分是与家人和朋友一起做粽子和吃粽子。人们传统上用芦苇、竹子的叶子包裹粽子，形成一个金字塔形状。叶子也给糯米和馅料带来特殊的香气和味道。馅料的选择因地区而异。中国北方地区喜欢甜食或甜点风格的粽子，用豆沙、红枣和坚果作为馅料。中国南方地区喜欢咸味粽子，有各种馅料，包括腌制猪肚、香肠和咸鸭蛋。粽子出现在春秋时期之前，最初用于祭祀祖先和神灵；在晋代，粽子成为端午节的节日食品。晋朝时，粽子被正式定为端午节的食品。这时，制作粽子的原料除糯米外，还加入了中药益母草。煮好的粽子被称为--义之宗。中国人在这个特殊的日子里吃粽子的原因有很多说法。民间的说法是为屈原举行追悼仪式。而事实上，早在春秋时期，粽子就已经被视为对祖先的一种祭祀。从晋代开始，粽子正式成为节日食品，并一直延续到现在。在20世纪初，端午节是在五月初一到初五举行的，也被称为五毒虫节。于德龄在她1911年的回忆录《紫禁城的两年》第11章中写道。五月初一对我们大家来说是个忙碌的日子，因为从初一到初五是五毒虫的节日，我以后会解释--也叫端午节。现在说说这个节气。它也被称为龙舟节。五月初五的中午是毒虫最毒的时候，爬行动物如青蛙、蜥蜴、蛇，躲在泥里，因为那个时候它们会瘫痪。一些医学家在那个时辰寻找它们，并把它们放在罐子里，等它们晒干后，有时会把它们当作药物使用。女王陛下告诉我这些，所以那天我到处去挖地，但什么也没找到。"
+			  },
+			  			}
+	</script>
+		<div class="page-content">
+			
+			<br />
+			<br />
+			<br />
+			<br />
+			<table style="width: 100%">
+				<tr>
+					<td style="height: 30px; width: 685px"></td>
+					<td style="height: 30px">
+					<input type="button"value="Back"onclick="window.location.href='articles.html'" style="width: 82px" class="auto-style1"/></td>
+					<td style="height: 30px"></td>
+				</tr>
+			</table>
+			<br />
+			
+		
+		</div>
+	</div>
+	<div class="footer">
+		Created by FDD-052022<br/>
+		Group 4
+	</div>
+</div>
+
+</body>
+
+</html>
